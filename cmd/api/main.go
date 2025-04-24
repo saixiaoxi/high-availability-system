@@ -11,13 +11,13 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
+	"github.com/saixiaoxi/high-availability-system/internal/api"
+	"github.com/saixiaoxi/high-availability-system/internal/middleware"
+	"github.com/saixiaoxi/high-availability-system/internal/monitors"
+	"github.com/saixiaoxi/high-availability-system/internal/service"
+	"github.com/saixiaoxi/high-availability-system/pkg/healthcheck"
+	"github.com/saixiaoxi/high-availability-system/pkg/retry"
 	"github.com/spf13/viper"
-	"github.com/yourusername/high-availability-system/internal/api"
-	"github.com/yourusername/high-availability-system/internal/middleware"
-	"github.com/yourusername/high-availability-system/internal/monitors"
-	"github.com/yourusername/high-availability-system/internal/service"
-	"github.com/yourusername/high-availability-system/pkg/healthcheck"
-	"github.com/yourusername/high-availability-system/pkg/retry"
 )
 
 func main() {

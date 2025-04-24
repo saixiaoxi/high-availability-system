@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/high-availability-system/internal/monitors"
+	"github.com/saixiaoxi/high-availability-system/internal/monitors"
 )
 
 // MonitoringMiddleware 创建一个用于记录API指标的中间件

@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/high-availability-system/pkg/retry"
+	"github.com/saixiaoxi/high-availability-system/pkg/retry"
 )
 
 // RetryConfig 定义重试中间件的配置

@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/yourusername/high-availability-system/internal/models"
-	"github.com/yourusername/high-availability-system/pkg/retry"
+	"github.com/saixiaoxi/high-availability-system/internal/models"
+	"github.com/saixiaoxi/high-availability-system/pkg/retry"
 )
 
 // Service 处理业务逻辑
