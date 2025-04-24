@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/high-availability-system/internal/models"
-	"github.com/yourusername/high-availability-system/internal/service"
+	"github.com/saixiaoxi/high-availability-system/internal/models"
+	"github.com/saixiaoxi/high-availability-system/internal/service"
 )
 
 // Handler 封装所有API处理函数
