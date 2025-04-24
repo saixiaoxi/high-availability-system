@@ -46,7 +46,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/yourusername/high-availability-system.git
+git clone https://github.com/saixiaoxi/high-availability-system.git
 
 # 进入项目目录
 cd high-availability-system
