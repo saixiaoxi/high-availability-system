@@ -1,0 +1,47 @@
+# 服务器配置
+server:
+  port: 8080
+  mode: release  # debug, release, test
+  timeout: 10s
+
+# 日志配置  
+logging:
+  level: info  # debug, info, warn, error, fatal
+  format: json  # json, text
+  output: stdout  # stdout, file
+  file: logs/app.log
+
+# 重试策略
+retry:
+  max_attempts: 3
+  initial_interval: 100ms
+  max_interval: 1s
+  multiplier: 2.0  # 指数退避乘数
+  randomization_factor: 0.5
+
+# 第三方监控系统
+monitoring:
+  prometheus:
+    enabled: true
+    endpoint: /metrics
+  fallback:
+    enabled: true  # 监控系统失效时的容错策略
+    local_logging: true  # 记录到本地日志
+    periodic_check: 30s  # 周期性检查监控系统是否恢复
+
+# 健康检查
+healthcheck:
+  enabled: true
+  endpoint: /health
+  check_interval: 5s
+  
+# 示例外部服务配置
+external_services:
+  payment_service:
+    url: http://payment-service:8080
+    timeout: 5s
+    retry_enabled: true
+  notification_service:
+    url: http://notification-service:8080
+    timeout: 3s
+    retry_enabled: true 
